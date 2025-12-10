@@ -4,55 +4,113 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>E-Livros</title>
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" /> 
-
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header class="cabecalho">
             <div class="container">
-                <input type="checkbox" id="menu" class="container__botao"/>
+                <input type="checkbox" id="menu" class="container__botao" />
                 <label for="menu">
-            <span class="cabecalho_menu-hamburguer container__imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Aventura</a>
+                    <span
+                        class="cabecalho_menu-hamburguer container__imagem"
+                    ></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Aventura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Romance</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">História</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Arte e Design</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infantil</a>
+                    </li>
+                </ul>
+                <img
+                    src="assets/Logo_Sozinho.svg"
+                    alt="Logo E-Livros"
+                    class="container__imagem"
+                />
+                <h1 class="container__titulo">
+                    <b class="container__titulo-negrito">E</b> - Livros
+                </h1>
+            </div>
+
+            <ul class="opcoes">
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
+                <label for="opcoes-menu">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Aventura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Romance</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">História</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Arte e Design</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infantil</a>
+                    </li>
+                </ul>
+                <li class="opcoes__item">
+                    <a href="" class="opcoes__link">Favoritos</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Romance</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">História</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Arte e Design</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link ">Infantil</a>
+                <li class="opcoes__item">
+                    <a href="" class="opcoes__link">Minha Estante</a>
                 </li>
             </ul>
-            <img src="assets/Logo_Sozinho.svg" alt="Logo E-Livros" class="container__imagem" />
-            <a href="#">
-                </div>
-                <div class="container">
-                <img src="assets/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"
-            /></a>
-            <a href="#">
-                <img src="assets/Compras.svg" alt="Carrinho de Compras" class="container__imagem"
-            /></a>
-            <a href="#">
-                <img src="assets/Usuario.svg" alt="Perfil do Usuário" class="container__imagem"
-            /></a>
+
+            <div class="container">
+                <a href="#">
+                    <img
+                        src="assets/Favoritos.svg"
+                        alt="Meus Favoritos"
+                        class="container__imagem container__imagem-transparente"
+                /></a>
+                <a href="#">
+                    <img
+                        src="assets/Compras.svg"
+                        alt="Carrinho de Compras"
+                        class="container__imagem"
+                /></a>
+                <a href="#">
+                    <img
+                        src="assets/Usuario.svg"
+                        alt="Perfil do Usuário"
+                        class="container__imagem"
+                /></a>
             </div>
         </header>
 
         <section class="banner">
             <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-            <input type="search" class="banner__pesquisa" placeholder="O que você procura?" />
+            <p class="banner__texto">
+                Encontre em nossa estante o que precisa para seu
+                desenvolvimento!
+            </p>
+            <input
+                type="search"
+                class="banner__pesquisa"
+                placeholder="O que você procura?"
+            />
         </section>
 
         <section class="carrossel">
@@ -60,35 +118,79 @@
             <!-- Slider main container -->
             <div class="swiper">
                 <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/Biblia.svg" alt="Capa da Bíblia"></div>
-                <div class="swiper-slide"><img src="assets/DiarioDeAnneFrank.svg" alt="Capa de Diario de Anne Frank"></div>
-                <div class="swiper-slide"><img src="assets/HarryPotter.svg" alt="Capa de Harry Potter"></div>
-                <div class="swiper-slide"><img src="assets/SteveJobs.svg" alt="Capa da Biografia de Steve Jobs"></div>
-                <div class="swiper-slide"><img src="assets/CapitaesDaAreia.svg" alt="Capa de Capitães de Areia"></div>
-                <div class="swiper-slide"><img src="assets/ChapeuzinhoVermelho.svg" alt="Capa de Chapeuzinho Vermelho"></div>
-            </div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/Biblia.svg" alt="Capa da Bíblia" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/DiarioDeAnneFrank.svg"
+                            alt="Capa de Diario de Anne Frank"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/HarryPotter.svg"
+                            alt="Capa de Harry Potter"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/SteveJobs.svg"
+                            alt="Capa da Biografia de Steve Jobs"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/CapitaesDaAreia.svg"
+                            alt="Capa de Capitães de Areia"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/ChapeuzinhoVermelho.svg"
+                            alt="Capa de Chapeuzinho Vermelho"
+                        />
+                    </div>
+                </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="card">
                 <div class="card__descricao">
-                <div class="descricao">
-                    <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
-                    <h2 class="descricao__titulo-livro">Coleção Cultura Chinesa</h2>
-                    <p class="descricao__texto"> A cultura chinesa é muito rica e diversificada. A China possui diversas culturas, línguas, escritas e tradições diferentes.</p>
-                </div>
-                <img src="assets/YingYang.svg" class="descricao__imagem">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">
+                            Talvez você se interesse por...
+                        </h3>
+                        <h2 class="descricao__titulo-livro">
+                            Coleção Cultura Chinesa
+                        </h2>
+                        <p class="descricao__texto">
+                            A cultura chinesa é muito rica e diversificada. A
+                            China possui diversas culturas, línguas, escritas e
+                            tradições diferentes.
+                        </p>
+                    </div>
+                    <img src="assets/YingYang.svg" class="descricao__imagem" />
                 </div>
                 <div class="card__botoes">
                     <ul class="botoes">
-                        <li class="botoes__item"><img src="assets/Favoritos.svg" alt="Favoritar Coleção"></li>
-                        <li class="botoes__item"><img src="assets/Compras.svg" alt="Adicionar ao Carrinho de Compras"></li>
+                        <li class="botoes__item">
+                            <img
+                                src="assets/Favoritos.svg"
+                                alt="Favoritar Coleção"
+                            />
+                        </li>
+                        <li class="botoes__item">
+                            <img
+                                src="assets/Compras.svg"
+                                alt="Adicionar ao Carrinho de Compras"
+                            />
+                        </li>
                     </ul>
                     <a href="" class="botoes__ancora">Saiba Mais</a>
                 </div>
@@ -100,36 +202,81 @@
             <!-- Slider main container -->
             <div class="swiper">
                 <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/Biblia.svg" alt="Capa da Bíblia"></div>
-                <div class="swiper-slide"><img src="assets/Alcorao.svg" alt="Capa do Alcorão"></div>
-                <div class="swiper-slide"><img src="assets/MaoTseTung.svg" alt="Capa de O Pequeno Livro Vermelho"></div>
-                <div class="swiper-slide"><img src="assets/PequenoPrincipe.svg" alt="Capa de Pequeno Principe"></div>
-                <div class="swiper-slide"><img src="assets/Dickens.svg" alt="Capa de Um Conto de Duas Cidade"></div>
-                <div class="swiper-slide"><img src="assets/DomQuixote.svg" alt="Capa de Dom Quixote"></div>
-            </div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/Biblia.svg" alt="Capa da Bíblia" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/Alcorao.svg" alt="Capa do Alcorão" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/MaoTseTung.svg"
+                            alt="Capa de O Pequeno Livro Vermelho"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/PequenoPrincipe.svg"
+                            alt="Capa de Pequeno Principe"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/Dickens.svg"
+                            alt="Capa de Um Conto de Duas Cidade"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="assets/DomQuixote.svg"
+                            alt="Capa de Dom Quixote"
+                        />
+                    </div>
+                </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="card">
                 <div class="card__descricao">
-                <div class="descricao">
-                    <img src="assets/Estrelinhas.svg"alt="avaliação de 5 estrelas">
-                    <h3 class="descricao__titulo">Autor do Mês</h3>
-                    <h2 class="descricao__titulo-livro">Machado de Assis </h2>
-                    <p class="descricao__texto"> Joaquim Maria Machado de Assis foi um escritor brasileiro, amplamente reconhecido como o maior expoente da literatura brasileira.</p>
-                </div>
-                <img src="assets/MachadoDeAssis.svg" class="descricao__imagem">
+                    <div class="descricao">
+                        <img
+                            src="assets/Estrelinhas.svg"
+                            alt="avaliação de 5 estrelas"
+                        />
+                        <h3 class="descricao__titulo">Autor do Mês</h3>
+                        <h2 class="descricao__titulo-livro">
+                            Machado de Assis
+                        </h2>
+                        <p class="descricao__texto">
+                            Joaquim Maria Machado de Assis foi um escritor
+                            brasileiro, amplamente reconhecido como o maior
+                            expoente da literatura brasileira.
+                        </p>
+                    </div>
+                    <img
+                        src="assets/MachadoDeAssis.svg"
+                        class="descricao__imagem"
+                    />
                 </div>
                 <div class="card__botoes">
                     <ul class="botoes">
-                        <li class="botoes__item"><img src="assets/Favoritos.svg" alt="Favoritar Coleção"></li>
-                        <li class="botoes__item"><img src="assets/Compras.svg" alt="Adicionar ao Carrinho de Compras"></li>
+                        <li class="botoes__item">
+                            <img
+                                src="assets/Favoritos.svg"
+                                alt="Favoritar Coleção"
+                            />
+                        </li>
+                        <li class="botoes__item">
+                            <img
+                                src="assets/Compras.svg"
+                                alt="Adicionar ao Carrinho de Compras"
+                            />
+                        </li>
                     </ul>
                     <a href="" class="botoes__ancora">Saiba Mais</a>
                 </div>
@@ -137,47 +284,88 @@
         </section>
 
         <section class="topicos">
-            <h2 class="topicos__titulo"> Tópicos Vistados Recentemente</h2>
+            <h2 class="topicos__titulo">Tópicos Vistados Recentemente</h2>
             <ul class="topicos__lista">
-                <li class="topicos__item"> <a href="" class="topicos__link">Romance</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">Design</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">Fantasia</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">Ficcção Científica</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">Aventura</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">Suspense</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">True Crimes</a></li>
-                <li class="topicos__item"> <a href="" class="topicos__link">Distopia</a></li>
-
-
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Romance</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Design</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Fantasia</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Ficcção Científica</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Aventura</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Suspense</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">True Crimes</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="" class="topicos__link">Distopia</a>
+                </li>
             </ul>
-
-
-
         </section>
         <section class="contato">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações sobre e-books, livros, promoções e outros</p>
-            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+            <div class="contato__descrcicao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">
+                    Atualizações sobre e-books, livros, promoções e outros
+                </p>
+            </div>
+            <input
+                type="email"
+                placeholder="Cadastre seu e-mail"
+                class="contato__email"
+            />
         </section>
-        <hr/>
+        <hr />
         <footer class="rodape">
-            <h2 class="rodape__titulo">developed by zelo</h2>
+            <h2 class="rodape__titulo">by zelo</h2>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Minhas Redes</li>
+                <li class="lista-rodape__item">
+                    <a href="" class="lista-rodape__link">
+                        <img src="assets/Linkedin.svg" alt="Logo Linkedin" />
+                        Linkedin
+                    </a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="" class="lista-rodape__link">
+                        <img src="assets/Github.svg" alt="Logo GitHub" />
+                        Github
+                    </a>
+                </li>
+            </ul>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script>
-           const swiper = new Swiper('.swiper', {
-  spaceBetween: 10,
-  slidesPerView: 2,
-  loop: true,
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-    el: '.swiper-pagination',
-  },
-});
+            const swiper = new Swiper(".swiper", {
+                spaceBetween: 10,
+                slidesPerView: 2,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 100,
+                    },
+                },
+            });
         </script>
     </body>
 </html>
