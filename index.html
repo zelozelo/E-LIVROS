@@ -15,7 +15,7 @@
         <header class="cabecalho">
             <div class="container">
                 <input type="checkbox" id="menu" class="container__botao" />
-                <label for="menu">
+                <label for="menu" class="container__rotulo">
                     <span
                         class="cabecalho_menu-hamburguer container__imagem"
                     ></span>
@@ -50,7 +50,7 @@
 
             <ul class="opcoes">
                 <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
-                <label for="opcoes-menu">
+                <label for="opcoes-menu" class="opcoes__rotulo">
                     <li class="opcoes__item">Categorias</li>
                 </label>
                 <ul class="lista-menu">
@@ -345,13 +345,21 @@
             <ul class="lista-rodape">
                 <li class="lista-rodape__titulo">Minhas Redes</li>
                 <li class="lista-rodape__item">
-                    <a href="" class="lista-rodape__link">
+                    <a
+                        href="https://www.linkedin.com/in/rafael-pazelo/"
+                        class="lista-rodape__link"
+                        target="_blank"
+                    >
                         <img src="assets/Linkedin.svg" alt="Logo Linkedin" />
                         Linkedin
                     </a>
                 </li>
                 <li class="lista-rodape__item">
-                    <a href="" class="lista-rodape__link">
+                    <a
+                        href="https://github.com/zelozelo"
+                        class="lista-rodape__link"
+                        target="_blank"
+                    >
                         <img src="assets/Github.svg" alt="Logo GitHub" />
                         Github
                     </a>
@@ -363,7 +371,7 @@
         <script>
             const swiper = new Swiper(".swiper", {
                 spaceBetween: 10,
-                slidesPerView: 2,
+                slidesPerView: 3,
                 loop: true,
                 navigation: {
                     nextEl: ".swiper-button-next",
